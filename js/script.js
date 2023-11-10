@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const ListOFaTags = allATags.querySelectorAll("a");
   let currenthref = window.location.href;
 
-  currenthref = currenthref.split("#")[0]
+  currenthref = currenthref.split("#")[0].split("?")[0]; 
 
   ListOFaTags.forEach((atag) => {
     
